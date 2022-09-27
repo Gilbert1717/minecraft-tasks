@@ -1,0 +1,8 @@
+.ORIG x3000
+LEA R0, HW
+PUTS
+TRAP	x31
+HALT
+HW .STRINGZ "Hello, World!"
+
+.END
