@@ -10,11 +10,13 @@ ADD R4 R3 #0 ;store block ID in R4
 ; get 2nd Block
 ADD R0 R0 #1
 TRAP 0x34
+TRAP 0x30
 
 NOT R3 R3
 NOT R4 R4
 AND R3 R3 R4
 NOT R3 R3
+TRAP 0x30
 
 ; place new block
 ADD R0 R0 #1
