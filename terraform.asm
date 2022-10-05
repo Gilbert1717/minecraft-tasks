@@ -1,7 +1,7 @@
 .ORIG x3000
 TRAP 0x32
-TRAP 0x36
 ADD R0, R0, #1
+ADD R1, R1, #-1
 ADD R2, R2, #1
 ADD R4, R1, #0
 NOT R4, R4
@@ -26,14 +26,12 @@ LINE_CHECK
             ADD R1 R1 #1
             ADD R5 R5 #1
             TRAP 0x35
-            TRAP 0x30
             BRn INCRE
             JSR X_MOVE
         DECRE
             TRAP 0x35
             ADD R1 R1 #-1
             ADD R5 R5 #-1
-            TRAP 0x30
             BRp DECRE
             JSR X_MOVE
             
@@ -45,7 +43,6 @@ ADD R0, R0, #3
 ADD R2, R2, #-1
 LD R5, Z_BUFFER
 ADD R5, R5, #-1
-TRAP 0x30
 ST R5, Z_BUFFER
 BRp LINE_CHECK
 

@@ -1,0 +1,19 @@
+a) x0101 0000 0010 0000
+   x0001 0000 0000 0001
+   x0001 0000 0000 0001
+   x0001 0000 0011 1111
+   x0001 0010 0111 1111
+   x0000 0011 1111 1011
+
+b)  AND R0, R0, #0
+    ADD R0, R0, R1 4
+    LOOP
+    ADD R0, R0, R1 
+    ADD R0, R0, #-1 
+    ADD R1, R1, #-1 
+    BRp LOOP
+
+c)  10
+    28
+
+d) The sum of all the intergers between 1 and the interger k (R1)
