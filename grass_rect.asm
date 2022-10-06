@@ -17,14 +17,12 @@ PUT_BLOCK
     TRAP 0x35
     ADD R2 R2 #-1
     ADD R5 R5 #-1
-    TRAP 0x30
     BRp PUT_BLOCK
         ;create line on x-coord -1
         ADD R5 R6 #0
         ADD R2 R2 R5
         ADD R0 R0 #-1
         ADD R4 R4 #-1
-        TRAP 0x30
         BRp PUT_BLOCK
 HALT
 SET_BLOCKS
