@@ -16,4 +16,4 @@ b)  AND R0, R0, #0
 c)  10
     28
 
-d) The sum of all the intergers between 1 and the interger k (R1)
+d) The sum of all intergers between 1 and the interger k (R1)
