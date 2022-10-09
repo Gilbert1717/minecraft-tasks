@@ -1,19 +1,19 @@
-a) x0101 0000 0010 0000
-   x0001 0000 0000 0001
-   x0001 0000 0000 0001
-   x0001 0000 0011 1111
-   x0001 0010 0111 1111
-   x0000 0011 1111 1011
+a) 0101 000 000 1 00000
+   0001 000 000 0 00001
+   0001 000 000 0 00001
+   0001 000 000 1 11111
+   0001 001 001 1 11111
+   0000 001 111111011
 
 b)  AND R0, R0, #0
-    ADD R0, R0, R1 4
     LOOP
+    ADD R0, R0, R1 
     ADD R0, R0, R1 
     ADD R0, R0, #-1 
     ADD R1, R1, #-1 
     BRp LOOP
 
-c)  10
-    28
+c)  16
+    49
 
-d) The sum of all intergers between 1 and the interger k (R1)
+d) The code clear R0 first, then squares the interger stored on R1 and stores the result on R0
